@@ -11,6 +11,17 @@ struct MovieDetailView1: View {
     var body: some View {
         
         VStack {
+            
+            RoundedRectangle(cornerRadius: 25)
+                .fill(.white)
+                .frame(height: 50)
+                .overlay(
+                    HStack {
+                        Image(systemName: "film")
+                        Text("Name: Spiderman No Way Home").bold().foregroundColor(.black)
+                    }).padding(5)
+                    
+            
             RoundedRectangle(cornerRadius: 25)
                 .fill(.white)
                 .frame(height: 50)
@@ -19,7 +30,7 @@ struct MovieDetailView1: View {
                         Image(systemName: "person")
                         Text("Director: Jon Watts").bold().foregroundColor(.black)
                     }
-                ).padding(10)
+                ).padding(5)
             
             RoundedRectangle(cornerRadius: 25)
                 .fill(.white)
@@ -27,9 +38,9 @@ struct MovieDetailView1: View {
                 .overlay(
                     HStack {
                         Image(systemName: "pencil")
-                        Text("Main Writers: Chris McKenna").bold().foregroundColor(.black)
+                        Text("Main Writer: Chris McKenna").bold().foregroundColor(.black)
                     }
-                ).padding(10)
+                ).padding(5)
             
             RoundedRectangle(cornerRadius: 25)
                 .fill(.white)
@@ -39,7 +50,7 @@ struct MovieDetailView1: View {
                         Image(systemName: "star")
                         Text("Starring: Tom Holland").bold().foregroundColor(.black)
                     }
-                ).padding(10)
+                ).padding(5)
         
             RoundedRectangle(cornerRadius: 25)
                 .fill(.white)
@@ -49,7 +60,7 @@ struct MovieDetailView1: View {
                         Image(systemName: "list.and.film")
                         Text("Distributed by : Sony Pictures").bold().foregroundColor(.black)
                     }
-                ).padding(10)
+                ).padding(5)
         }
         
     }

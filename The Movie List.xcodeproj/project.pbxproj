@@ -13,6 +13,8 @@
 		35634C802889527D00D7D647 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35634C7F2889527D00D7D647 /* Preview Assets.xcassets */; };
 		35634C872889547F00D7D647 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35634C862889547F00D7D647 /* MovieDetailView.swift */; };
 		35634C89288973B100D7D647 /* MovieDetailView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35634C88288973B100D7D647 /* MovieDetailView1.swift */; };
+		35634C8B28897AEA00D7D647 /* MovieDetialViewFinal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35634C8A28897AEA00D7D647 /* MovieDetialViewFinal.swift */; };
+		35634C8D2889807D00D7D647 /* IndividualNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35634C8C2889807D00D7D647 /* IndividualNavigationBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		35634C7F2889527D00D7D647 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		35634C862889547F00D7D647 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 		35634C88288973B100D7D647 /* MovieDetailView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView1.swift; sourceTree = "<group>"; };
+		35634C8A28897AEA00D7D647 /* MovieDetialViewFinal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetialViewFinal.swift; sourceTree = "<group>"; };
+		35634C8C2889807D00D7D647 /* IndividualNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualNavigationBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				35634C7A2889527D00D7D647 /* ContentView.swift */,
 				35634C862889547F00D7D647 /* MovieDetailView.swift */,
 				35634C88288973B100D7D647 /* MovieDetailView1.swift */,
+				35634C8A28897AEA00D7D647 /* MovieDetialViewFinal.swift */,
+				35634C8C2889807D00D7D647 /* IndividualNavigationBar.swift */,
 				35634C7C2889527D00D7D647 /* Assets.xcassets */,
 				35634C7E2889527D00D7D647 /* Preview Content */,
 			);
@@ -145,6 +151,8 @@
 			files = (
 				35634C89288973B100D7D647 /* MovieDetailView1.swift in Sources */,
 				35634C872889547F00D7D647 /* MovieDetailView.swift in Sources */,
+				35634C8D2889807D00D7D647 /* IndividualNavigationBar.swift in Sources */,
+				35634C8B28897AEA00D7D647 /* MovieDetialViewFinal.swift in Sources */,
 				35634C7B2889527D00D7D647 /* ContentView.swift in Sources */,
 				35634C792889527D00D7D647 /* The_Movie_ListApp.swift in Sources */,
 			);
