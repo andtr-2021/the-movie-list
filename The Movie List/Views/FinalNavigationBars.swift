@@ -10,10 +10,20 @@ import SwiftUI
 struct FinalNavigationBars: View {
     var body: some View {
         
-        List (movies, id: \.self.name) { movie in
-            IndividualNavigationBar(movie: movie)
+        NavigationView {
+            List (movies, id: \.self.name) { movie in
+                
+                NavigationLink {
+                    MovieDetialViewFinal(movie: movie)
+                } label: {
+                    IndividualNavigationBar(movie: movie)
+                    
+                }
+                
+            }
             
         }
+    
     }
 }
 

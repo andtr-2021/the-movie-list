@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct MovieDetialViewFinal: View {
+    var movie : Movie
+    
     var body: some View {
         ZStack {
             
             Color(UIColor.systemIndigo).ignoresSafeArea(.all, edges: .bottom)
             
             VStack {
-                Image("spiderman-no-way-home")
-                    .resizable()
+                movie.image.resizable()
                     .frame(width: 200, height: 300, alignment: .center)
                     .clipShape(RoundedRectangle(cornerRadius: 30))
                     .overlay(RoundedRectangle(cornerRadius: 30).stroke(Color(.red), lineWidth: 10)).padding(30)
@@ -26,7 +27,7 @@ struct MovieDetialViewFinal: View {
                     .overlay(
                         HStack {
                             Image(systemName: "film")
-                            Text("Name: Spider-Man No Way Home").bold().foregroundColor(.black)
+                            Text("Name: \(movie.name)").bold().foregroundColor(.black)
                         })
                         
                 
@@ -36,7 +37,7 @@ struct MovieDetialViewFinal: View {
                     .overlay(
                         HStack {
                             Image(systemName: "person")
-                            Text("Director: Jon Watts").bold().foregroundColor(.black)
+                            Text("Director: \(movie.director)").bold().foregroundColor(.black)
                         }
                     )
                 
@@ -46,7 +47,7 @@ struct MovieDetialViewFinal: View {
                     .overlay(
                         HStack {
                             Image(systemName: "square.and.pencil")
-                            Text("Main Writer: Chris McKenna").bold().foregroundColor(.black)
+                            Text("Main Writer:  \(movie.mainWriter)").bold().foregroundColor(.black)
                         }
                     )
                 
@@ -56,7 +57,7 @@ struct MovieDetialViewFinal: View {
                     .overlay(
                         HStack {
                             Image(systemName: "star")
-                            Text("Starring: Tom Holland").bold().foregroundColor(.black)
+                            Text("Starring:  \(movie.starring)").bold().foregroundColor(.black)
                         }
                     )
             
@@ -66,7 +67,7 @@ struct MovieDetialViewFinal: View {
                     .overlay(
                         HStack {
                             Image(systemName: "list.and.film")
-                            Text("Distributed by : Sony Pictures").bold().foregroundColor(.black)
+                            Text("Distribution :  \(movie.distribute)").bold().foregroundColor(.black)
                         }
                     )
                 
@@ -76,7 +77,7 @@ struct MovieDetialViewFinal: View {
                     .overlay(
                         HStack {
                             Image(systemName: "info.circle")
-                            Text("About the film: ").bold().foregroundColor(.black)
+                            Text("About the film:  \(movie.aboutTheFilm)").bold().foregroundColor(.black)
                         }
                     )
             }
@@ -88,6 +89,7 @@ struct MovieDetialViewFinal: View {
 
 struct MovieDetialViewFinal_Previews: PreviewProvider {
     static var previews: some View {
-        MovieDetialViewFinal()
+        MovieDetialViewFinal(movie: movies[0])
+        MovieDetialViewFinal(movie: movies[1])
     }
 }
