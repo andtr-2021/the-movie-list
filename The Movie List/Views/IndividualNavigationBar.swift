@@ -8,18 +8,21 @@
 import SwiftUI
 
 struct IndividualNavigationBar: View {
+    var movie : Movie
     var body: some View {
         HStack {
-            Image("spiderman-no-way-home").resizable().frame(width: 45, height: 60)
+            movie.image.resizable().frame(width: 45, height: 60)
                 .clipShape(RoundedRectangle(cornerRadius: 8))
-            Text("Spider-Man: No Way Home").font(.callout).bold()
+            Text(movie.name).font(.callout).bold()
         }
     }
 }
 
 struct IndividualNavigationBar_Previews: PreviewProvider {
     static var previews: some View {
-        IndividualNavigationBar()
+        IndividualNavigationBar(movie : movies[0])
+        IndividualNavigationBar(movie : movies[1])
+        IndividualNavigationBar(movie : movies[2])
     }
 }
 
