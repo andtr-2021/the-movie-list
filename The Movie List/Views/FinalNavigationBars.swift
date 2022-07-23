@@ -23,6 +23,7 @@ struct FinalNavigationBars: View {
             }
             
         }
+        .navigationTitle("Films")
     
     }
 }

@@ -13,7 +13,8 @@ struct MovieDetialViewFinal: View {
     var body: some View {
         ZStack {
             
-            Color(UIColor.systemIndigo).ignoresSafeArea(.all, edges: .bottom)
+            Color(UIColor.systemIndigo)
+                .ignoresSafeArea(.all)
             
             VStack {
                 movie.image.resizable()
@@ -83,7 +84,8 @@ struct MovieDetialViewFinal: View {
             }
             
             
-        }
+        }.navigationTitle(movie.name)
+            .navigationBarTitleDisplayMode(.inline)
     }
 }
 
