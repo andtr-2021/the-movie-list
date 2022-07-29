@@ -1,5 +1,5 @@
 //
-//  SearchBar.swift
+//  SearchBar1.swift
 //  The Movie List
 //
 //  Created by Truong An Do on 23/07/2022.
@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct SearchBar: View {
-    private var listOfMovie = movies1
-     @State var searchMovieName = ""
-
+struct SearchBar1: View {
+    private var listOfMovie = movies
+    @State var searchMovieName = ""
+    
     var body: some View {
         NavigationView {
-            List (movies1, id: \.self) { movie in
+            List (searchMovies, id: \.self.name) { movie in
                     HStack {
-                        Text(movie.capitalized)
+                        Text(movie.name.capitalized)
                         Spacer()
                         Image(systemName: "figure.walk")
                             .foregroundColor(.blue)
@@ -26,19 +26,20 @@ struct SearchBar: View {
             .navigationTitle("Films")
         }
     }
-
-    var movieList : [String] {
-        let lcMovie = listOfMovie.map { $0.lowercased() }
-
-        return searchMovieName == "" ? lcMovie : lcMovie.filter {
-            $0.contains(searchMovieName.lowercased())
+    
+    var searchMovies : [Movie] {
+        if searchMovieName.isEmpty{
+            return movies
+        } else {
+            return movies.filter {$0.name.lowercased().contains(searchMovieName.lowercased())}
         }
+        
     }
 }
 
-struct SearchBar_Previews: PreviewProvider {
+struct SearchBar1_Previews: PreviewProvider {
     static var previews: some View {
-        SearchBar()
+        SearchBar1()
     }
 }
 

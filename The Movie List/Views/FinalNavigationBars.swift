@@ -21,9 +21,10 @@ struct FinalNavigationBars: View {
                 }
                 
             }
+            .navigationTitle("Films")
             
         }
-        .navigationTitle("Films")
+        
     
     }
 }

@@ -20,6 +20,7 @@
 		35A0B764288A3C85007FE364 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A0B763288A3C85007FE364 /* Movie.swift */; };
 		35A0B766288A3DE8007FE364 /* MovieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A0B765288A3DE8007FE364 /* MovieData.swift */; };
 		35A0B768288A41DD007FE364 /* FinalNavigationBars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A0B767288A41DD007FE364 /* FinalNavigationBars.swift */; };
+		35ECC448288C5DA200C5F40C /* SearchBar1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ECC447288C5DA200C5F40C /* SearchBar1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		35A0B763288A3C85007FE364 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		35A0B765288A3DE8007FE364 /* MovieData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieData.swift; sourceTree = "<group>"; };
 		35A0B767288A41DD007FE364 /* FinalNavigationBars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalNavigationBars.swift; sourceTree = "<group>"; };
+		35ECC447288C5DA200C5F40C /* SearchBar1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				35634C8C2889807D00D7D647 /* IndividualNavigationBar.swift */,
 				35A0B767288A41DD007FE364 /* FinalNavigationBars.swift */,
 				358D2296288C472B000A5A73 /* SearchBar.swift */,
+				35ECC447288C5DA200C5F40C /* SearchBar1.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				35A0B764288A3C85007FE364 /* Movie.swift in Sources */,
 				35634C89288973B100D7D647 /* MovieDetailView1.swift in Sources */,
 				35634C872889547F00D7D647 /* MovieDetailView.swift in Sources */,
+				35ECC448288C5DA200C5F40C /* SearchBar1.swift in Sources */,
 				35634C8D2889807D00D7D647 /* IndividualNavigationBar.swift in Sources */,
 				35A0B766288A3DE8007FE364 /* MovieData.swift in Sources */,
 				35A0B768288A41DD007FE364 /* FinalNavigationBars.swift in Sources */,

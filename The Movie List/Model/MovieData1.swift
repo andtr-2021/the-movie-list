@@ -7,4 +7,4 @@
 
 import Foundation
 
-public var movies1 : [String] = [ "Spider-Man: No Way Home", "12 Angry Men", "Spirited Away", "Moon Knight", "John Wick" ]
+var movies1 : [String] = [ "Spider-Man: No Way Home", "12 Angry Men", "Spirited Away", "Moon Knight", "John Wick", "Yes Man", "The Truman Show", "ShawShack Redemption", "Peaky Blinders", "Queen Gambit", "Fight Club", "The Rise of Gru" ]

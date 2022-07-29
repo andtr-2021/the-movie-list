@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct Movie {
+struct Movie: Hashable {
     var name: String
     var director: String
     var mainWriter: String
