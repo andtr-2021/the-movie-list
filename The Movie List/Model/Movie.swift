@@ -20,5 +20,7 @@ struct Movie: Hashable {
     var image : Image {
         Image(imageName)
     }
+    
+    let trailerID : String
 }
 

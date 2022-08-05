@@ -14,13 +14,12 @@ struct SearchBar1: View {
     var body: some View {
         NavigationView {
             List (searchMovies, id: \.self.name) { movie in
-                    HStack {
-                        Text(movie.name.capitalized)
-                        Spacer()
-                        Image(systemName: "figure.walk")
-                            .foregroundColor(.blue)
-                    }
-                    .padding()
+                NavigationLink {
+                    ScrollPage(movie: movie)
+                } label: {
+                    IndividualNavigationBar(movie: movie)
+                    
+                }
             }
             .searchable(text: $searchMovieName)
             .navigationTitle("Films")
