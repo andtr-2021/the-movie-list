@@ -34,10 +34,7 @@ struct ScrollPage: View {
                     Group {
                         
                         
-                        HStack {
-                            Image(systemName: "film")
-                            Text("Name: \(movie.name)").bold().foregroundColor(.black)
-                        }
+                    
                         HStack {
                             Image(systemName: "person")
                             Text("Director: \(movie.director)").bold().foregroundColor(.black)

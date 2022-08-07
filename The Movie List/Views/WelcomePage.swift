@@ -18,7 +18,6 @@ struct WelcomePage: View {
 
     @State var isWelcomeActive : Bool = true
     @State var introText : String = ""
-    @State var screenShot : String = ""
     
     let images: [ImageModel] = [
     .init(id: 0, imageView: "list-view"),
@@ -26,37 +25,57 @@ struct WelcomePage: View {
     .init(id: 2, imageView: "detail-view"),
     ]
     
+    
     var body: some View {
         
         if isWelcomeActive {
             ZStack {
                 Color("RedLogo").ignoresSafeArea(.all)
                 
+  
                 VStack {
                   
                     Text("Welcome")
                         .font(.system(size: 50, weight: .heavy)).foregroundColor(.white)
                     Text("To The Movie List.")
                         .font(.system(size: 20)).fontWeight(.bold)
-                    Text("\"There is not thing better than \n watching a good movie \nafter completing all your works.\"")
+                    Text("\"There is not thing better than watching a good movie after completing all your works.\"")
                         .multilineTextAlignment(.center)
-                        .padding()
-                    
-                    Text("Here is all the things \n that you can do with the app. Have fun!").multilineTextAlignment(.center)
                         .padding()
     
                 
                     ScrollView(.horizontal, showsIndicators: true) {
                         HStack(alignment: .center, spacing: 150) {
                                 ForEach(images, id: \.id) { post in
-                                    Image(post.imageView)
-                                        .resizable()
-                                        .frame(width: 200, height: 350, alignment: .center)
-                                        .clipShape(RoundedRectangle(cornerRadius: 20))
+                                    VStack {
+                                        Image(post.imageView)
+                                            .resizable()
+                                            .frame(width: 200, height: 350, alignment: .center)
+                                            .clipShape(RoundedRectangle(cornerRadius: 20))
+                                        
+                                    } // VStack
+                                    
                            }
                         }.padding(.horizontal, 95)
-                            
-                    }
+                        
+                    } // Scroll View
+                    
+                    Spacer()
+                    
+                    HStack {
+                       
+                        Text("View 1: This is a movie list.").bold().foregroundColor(.black)
+                    }.padding(5)
+                    
+                    HStack {
+                        Text("View 2 : Search a movie but its name.").bold().foregroundColor(.black)
+                    }.padding(5)
+                    
+                    HStack {
+                        Text("View 3: This's the detail infor a movie.").bold().foregroundColor(.black)
+                    }.padding(5)
+                        
+                    
                     
                     Spacer()
                     
