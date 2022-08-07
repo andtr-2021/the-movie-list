@@ -17,12 +17,16 @@ struct ScrollPage: View {
                 
                 VStack(alignment: .leading, spacing: 20) {
                     
+                    movie.image.resizable()
+                        .frame(width: 200, height: 300, alignment: .center)
+                        .clipShape(RoundedRectangle(cornerRadius: 30))
+                        .overlay(RoundedRectangle(cornerRadius: 30)
+                        .stroke(Color(.red), lineWidth: 10))
+                        .padding(.horizontal, 95)
+                        .padding(.vertical, 20)
+                    
                     Group {
                         
-                        movie.image.resizable()
-                            .frame(width: 200, height: 300, alignment: .center)
-                            .clipShape(RoundedRectangle(cornerRadius: 30))
-                            .overlay(RoundedRectangle(cornerRadius: 30).stroke(Color(.red), lineWidth: 10)).padding(30)
                         
                         HStack {
                             Image(systemName: "film")
@@ -58,10 +62,12 @@ struct ScrollPage: View {
                             Image(systemName: "airplayvideo")
                             Text("Trailer:")
                                 .bold().foregroundColor(.black)
+                                
                         }
+                            
                         
                     } // Group
-                    .padding(.horizontal, 50)
+                    .padding(.horizontal, 60)
                     
                     Trailer(videoID: movie.trailerID)
                         .frame(minWidth: 300, minHeight: 200)

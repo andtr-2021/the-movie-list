@@ -12,6 +12,7 @@ struct SearchBar1: View {
     @State var searchMovieName = ""
     
     var body: some View {
+        
         NavigationView {
             List (searchMovies, id: \.self.name) { movie in
                 NavigationLink {
