@@ -1,9 +1,15 @@
-//
-//  WelcomePage.swift
-//  The Movie List
-//
-//  Created by Truong An Do on 05/08/2022.
-//
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2022B
+  Assessment: Assignment 2
+  Author: Do Truong An
+  ID: Your student id: s3878698
+  Created  date: 25/7/2022
+  Last modified: 7/8/2022
+  Acknowledgement: Acknowledge the resources that you use here.
+*/
+
 
 import SwiftUI
 import UIKit
@@ -39,24 +45,20 @@ struct WelcomePage: View {
                     Text("Here is all the things \n that you can do with the app. Have fun!").multilineTextAlignment(.center)
                         .padding()
     
-                    Spacer()
-                    ScrollView(.horizontal, showsIndicators: false) {
+                
+                    ScrollView(.horizontal, showsIndicators: true) {
                         HStack(alignment: .center, spacing: 150) {
                                 ForEach(images, id: \.id) { post in
                                     Image(post.imageView)
                                         .resizable()
-                                        .frame(width: 200, height: 300, alignment: .center)
-                                        .clipShape(RoundedRectangle(cornerRadius: 30))
+                                        .frame(width: 200, height: 350, alignment: .center)
+                                        .clipShape(RoundedRectangle(cornerRadius: 20))
                            }
-                        }
-                    }
-                            .padding(.horizontal, 127)
+                        }.padding(.horizontal, 95)
                             
                     }
                     
-                    
                     Spacer()
-                    
                     
                     Button {
                         isWelcomeActive = false
@@ -64,16 +66,17 @@ struct WelcomePage: View {
                         RoundedRectangle(cornerRadius: 20)
                             .fill(.white.opacity(0.7))
                             .frame(width: 250, height: 80, alignment: .center)
-                            .padding(.horizontal, 125)
                             .overlay(
                                 Text("Get Started")
-                                    .font(.system(.title3, design: .rounded))
-                                    .foregroundColor(.black)
-                                    
+                                    .font(.system(.title3, design: .rounded)).foregroundColor(.black)
+
                             )
                     } // Butoon
-                } // ZStack
-            } else {
+                    
+                } // VStack
+                
+            } // ZStack
+        } else {
             SearchBar1()
         }
         
