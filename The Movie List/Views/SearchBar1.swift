@@ -33,6 +33,7 @@ struct SearchBar1: View {
         }
     }
     
+    // making the search ability 
     var searchMovies : [Movie] {
         if searchMovieName.isEmpty{
             return movies

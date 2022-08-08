@@ -34,7 +34,7 @@ struct WelcomePage: View {
                 
   
                 VStack {
-                  
+                    // MARK: Introduction Texts
                     Text("Welcome")
                         .font(.system(size: 50, weight: .heavy)).foregroundColor(.white)
                     Text("To The Movie List.")
@@ -42,8 +42,9 @@ struct WelcomePage: View {
                     Text("\"There is not thing better than watching a good movie after completing all your works.\"")
                         .multilineTextAlignment(.center)
                         .padding()
-    
-                
+                    
+                    
+                    // MARK: The ScrollView to visualize all the pages of the app.
                     ScrollView(.horizontal, showsIndicators: true) {
                         HStack(alignment: .center, spacing: 150) {
                                 ForEach(images, id: \.id) { post in
@@ -62,13 +63,14 @@ struct WelcomePage: View {
                     
                     Spacer()
                     
+                    // MARK: The texts to guide the users.
                     HStack {
                        
                         Text("View 1: This is a movie list.").bold().foregroundColor(.black)
                     }.padding(5)
                     
                     HStack {
-                        Text("View 2 : Search a movie but its name.").bold().foregroundColor(.black)
+                        Text("View 2 : Search a movie by its name.").bold().foregroundColor(.black)
                     }.padding(5)
                     
                     HStack {
@@ -79,6 +81,7 @@ struct WelcomePage: View {
                     
                     Spacer()
                     
+                    // MARK: The Button to change to different view
                     Button {
                         isWelcomeActive = false
                     } label: {

@@ -15,6 +15,7 @@ import SwiftUI
 struct IndividualNavigationBar: View {
     var movie : Movie
     var body: some View {
+        // This is an individual bar using to add to the list in the SearchBar1 
         HStack {
             movie.image.resizable().frame(width: 45, height: 60)
                 .clipShape(RoundedRectangle(cornerRadius: 8))

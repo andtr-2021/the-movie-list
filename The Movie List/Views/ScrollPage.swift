@@ -23,6 +23,7 @@ struct ScrollPage: View {
                 
                 VStack(alignment: .leading, spacing: 20) {
                     
+                    // MARK: Image - Movie Posters
                     movie.image.resizable()
                         .frame(width: 200, height: 300, alignment: .center)
                         .clipShape(RoundedRectangle(cornerRadius: 30))
@@ -31,9 +32,8 @@ struct ScrollPage: View {
                         .padding(.horizontal, 95)
                         .padding(.vertical, 20)
                     
+                    // MARK: Movie Details
                     Group {
-                        
-                        
                     
                         HStack {
                             Image(systemName: "person")
@@ -72,6 +72,7 @@ struct ScrollPage: View {
                     } // Group
                     .padding(.horizontal, 60)
                     
+                    // MARK: Embedded the trailer of the movie 
                     Trailer(videoID: movie.trailerID)
                         .frame(minWidth: 300, minHeight: 200)
                         .cornerRadius(5)

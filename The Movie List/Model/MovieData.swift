@@ -12,6 +12,8 @@
 
 import Foundation
 
+// This is an array that contains all the infor of all the movies that the app has 
+
 var movies : [Movie] = [
     Movie(name: "Spider-Man: No Way Home", director : "Jon Watts", mainWriter: "Chris McKenna", starring: "Tom Holland", distribute: "Sony Pictures", aboutTheFilm: "With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.", imageName: "spiderman-no-way-home", trailerID: "JfVOs4VSpmA"),
     

@@ -11,7 +11,6 @@
 */
 
 import SwiftUI
-
 @main
 struct The_Movie_ListApp: App {
     var body: some Scene {

@@ -13,6 +13,7 @@
 import Foundation
 import SwiftUI
 
+// This is a struct for the movie datatype including all the infor of each movie 
 struct Movie: Hashable {
     var name: String
     var director: String

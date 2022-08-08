@@ -7,11 +7,12 @@
   ID: Your student id: s3878698
   Created  date: 25/7/2022
   Last modified: 7/8/2022
-  Acknowledgement: Acknowledge the resources that you use here.
-*/
+  Acknowledgement: https://medium.com/@amolrai3/how-to-create-scrollview-in-swiftui-b47aae874478 - I learned to make a ScrollView Horizontally with Image from this website but I had to modify it a lot.
+ */
 
 import Foundation
 
+// this struct is using for an image in the horizontally scrollview in the WelcomPage 
 struct ImageModel: Identifiable {
     let id: Int
     let imageView: String

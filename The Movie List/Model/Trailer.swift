@@ -7,12 +7,14 @@
   ID: Your student id: s3878698
   Created  date: 25/7/2022
   Last modified: 7/8/2022
-  Acknowledgement: Acknowledge the resources that you use here.
+  Acknowledgement: https://www.youtube.com/watch?v=CX-BdDHW0Ho - the code of this whole file 
 */
 
 import SwiftUI
 import WebKit
 
+
+// This struct helps to embedded a movie into the app
 struct Trailer : UIViewRepresentable {
     let videoID: String
     
